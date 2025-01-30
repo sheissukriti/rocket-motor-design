@@ -5,7 +5,7 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import os
 import json
-from cad_files import *
+from rocket-motor-design.cad_files import *
 # Load environment variables from .env file
 load_dotenv()
 
