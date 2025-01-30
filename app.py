@@ -136,20 +136,20 @@ with cols[3]:
     max_view_distance = st.number_input("Max view distance", min_value=1, value=1000, key='max_view_distance')
 
 stl_files = stl_files[0:4]  # Ensure we only have four files to display
-cols = st.columns(len(stl_files))
-
-for i, (col, stl_file) in enumerate(zip(cols, stl_files)):
-    with col:
-        st.subheader(stl_file)
-        stl_from_file(file_path=stl_file, 
-                      color=color,
-                      material=material,
-                      auto_rotate=auto_rotate,
-                      opacity=opacity,
-                      height=height,
-                      shininess=100,
-                      cam_v_angle=cam_v_angle,
-                      cam_h_angle=cam_h_angle,
-                      cam_distance=cam_distance,
-                      max_view_distance=max_view_distance,
-                      key=f'stl_file_{i}')
+cols = st.columns(4)
+if stl_files:
+    for i, (col, stl_file) in enumerate(zip(cols, stl_files)):
+        with col:
+            st.subheader(stl_file)
+            stl_from_file(file_path=stl_file, 
+                        color=color,
+                        material=material,
+                        auto_rotate=auto_rotate,
+                        opacity=opacity,
+                        height=height,
+                        shininess=100,
+                        cam_v_angle=cam_v_angle,
+                        cam_h_angle=cam_h_angle,
+                        cam_distance=cam_distance,
+                        max_view_distance=max_view_distance,
+                        key=f'stl_file_{i}')
