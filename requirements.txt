@@ -3,4 +3,5 @@ streamlit_stl
 openai
 pandas
 python-dotenv
+opencv-python-headless
 cadquery
