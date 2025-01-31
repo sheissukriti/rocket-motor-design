@@ -12,7 +12,7 @@ from cad_files import *
 # # Get the OpenAI API key from the environment variables
 # openai_api_key = os.getenv('OPENAI_API_KEY')
 st.set_page_config(layout="wide")
-st.title('Missile Builder')
+st.title('Rocket Motor Builder')
 openai_api_key = st.text_input("OpenAI API Key", type="password")
 if not openai_api_key:
     st.info("Please add your OpenAI API key to continue.", icon="🗝️")
@@ -97,10 +97,10 @@ else:
     altitude_km = st.number_input('Enter altitude in kilometers:', min_value=0)
     speed_mach = st.selectbox('Select speed (Mach):', options=[1, 2, 3, 4, 5])
     flag = False
-    if st.button('Find Nearest Missile'):
+    if st.button('Find Nearest Rocket Motor '):
         nearest_missile = find_nearest_missile(payload, range_km, altitude_km, speed_mach)
         rocket_dimensions = extract_dimensions(nearest_missile)
-        st.write('Nearest Missile:')
+        st.write('Nearest Rocket Motor:')
         st.write(nearest_missile)
         st.write('Rocket Dimensions:')
         st.write(rocket_dimensions)
