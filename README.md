@@ -2,6 +2,10 @@
 
 This project is a web application for designing and visualizing rocket motors. It allows users to input specific parameters for a rocket and find the nearest matching design from a dataset. The application also generates CAD files for the rocket components using the `cadquery` library.
 
+## Pre-requisites 
+- Python 3.11.9 (Follow the instructions on the official Python website to download and install Python 3.11.9 for your operating system.)
+- Git
+
 ## Features
 
 - **User Input**: Enter payload, range, altitude, and speed to find the nearest matching rocket design.
@@ -11,7 +15,7 @@ This project is a web application for designing and visualizing rocket motors. I
 
 ## Requirements
 
-- Python 3.7 or higher
+- Python 3.11.9
 - The following Python packages:
   - `streamlit`
   - `streamlit_stl`
@@ -21,11 +25,11 @@ This project is a web application for designing and visualizing rocket motors. I
   - `opencv-python`
   - `cadquery`
 
-## Installation
+## Installation (To be done using PowerShell Terminal) 
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/rocket-motor-design.git
+   git clone https://github.com/sheissukriti/rocket-motor-design.git
    cd rocket-motor-design
    ```
 
