@@ -39,7 +39,7 @@ This project is a web application for designing and visualizing rocket motors. I
 
    source venv/bin/activate  #for linux/mac
    
-   venv\Scripts\activate  #for windows
+   venv\Scripts\activate.bat  #for windows
    ```
 
 4. **Install Dependencies**:
