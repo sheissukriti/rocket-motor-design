@@ -29,7 +29,20 @@ This project is a web application for designing and visualizing rocket motors. I
    cd rocket-motor-design
    ```
 
-2. **Install Dependencies**:
+2. **Install Python 3.11.9**:
+   Follow the instructions on the official Python website to download and install Python 3.11.9 for your operating system.
+
+3. **Create a Virtual Environment**:
+   Create a virtual environment to manage dependencies.
+   ```bash
+   python -m venv venv
+
+   source venv/bin/activate  #for linux/mac
+   
+   venv\Scripts\activate  #for windows
+   ```
+
+4. **Install Dependencies**:
    Use the `requirements.txt` file to install all necessary packages.
    ```bash
    pip install -r requirements.txt
