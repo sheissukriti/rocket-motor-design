@@ -59,7 +59,7 @@ This project is a web application for designing and visualizing rocket motors. I
 
 2. **Input Parameters**:
    - Enter the desired payload, range, altitude, and speed.
-   - Click on "Find Nearest Missile" to get the closest matching rocket design.
+   - Click "Fiind Nearest Rocket Motor " to get the closest matching rocket design.
 
 3. **View Results**:
    - The application will display the nearest missile and its dimensions.
@@ -67,7 +67,7 @@ This project is a web application for designing and visualizing rocket motors. I
 
 4. **3D Visualization**:
    - Use the Streamlit interface to visualize the generated STL files.
-   - Customize the view with options for color, material, rotation, opacity, and camera settings.
+   - Customize the view with color, material, rotation, opacity, and camera settings options.
 
 ## File Structure
 
